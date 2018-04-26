@@ -1,0 +1,409 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body{
+	height:100%;
+}
+body{
+	background:#083d60;
+}
+ul{
+	list-style-type:none;
+}
+#footer{
+    position:absolute;
+    left: 0;
+	bottom:0;
+	width:100%;
+    height: 46px;
+
+    background-image:url(../images/common/footer.png );
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: cover;
+	z-index:998;
+}
+
+/*----gnb---*/
+
+#gnb{
+   position:fixed;
+   left:0;
+   bottom:46px;
+   width:100%;
+   height:37px;
+    background-image: url(../images/common/gnb_back.png);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    z-index: 999;
+}
+#gnb .inner_gnb{
+    margin-left: 560px;
+    margin-top: -45px;
+}
+#gnb .inner_gnb >li{
+   float:left;
+   margin-right:117px;
+}
+#gnb .inner_gnb >li > a{
+   display:block;
+   width:80px;
+   height:130px;
+   text-indent:-9999px;
+}
+#gnb .inner_gnb > .gnb01 a{
+ background:url('../images/common/gnb_bell_01.png') no-repeat left top;
+    width: 105px;
+		position: relative;
+}
+#gnb .inner_gnb > .gnb01 a:hover{
+   background:url('../images/common/gnb_over_01.png') no-repeat left top;
+	 left:-1px;
+}
+#gnb .inner_gnb > .gnb02 a{
+   background:url('../images/common/gnb_bell_02.png') no-repeat left top;
+	 width: 105px;
+	 position: relative;
+}
+#gnb .inner_gnb > .gnb02 a:hover{
+   background:url('../images/common/gnb_over_02.png') no-repeat left top;
+   left:-1px;
+}
+#gnb .inner_gnb > .gnb03 a{
+   background:url('../images/common/gnb_bell_03.png') no-repeat left top;
+	 width: 105px;
+	 position: relative;
+}
+#gnb .inner_gnb > .gnb03 a:hover{
+   background:url('../images/common/gnb_over_03.png') no-repeat left top;
+	 left:-1px;
+}
+#gnb .inner_gnb > .gnb04 a{
+   background:url('../images/common/gnb_bell_04.png') no-repeat left top;
+	 width: 105px;
+	position: relative;
+}
+#gnb .inner_gnb > .gnb04 a:hover{
+   background:url('../images/common/gnb_over_04.png') no-repeat left top;
+	 left:-1px;
+}
+#gnb .inner_gnb > li.rudolph{
+    z-index: 9999;
+    margin-left:-759px;
+    top:-15px;
+}
+
+#gnb .inner_gnb > .rudolph .rudolph_image{
+   position:absolute;
+    margin-left: -250px;
+    bottom: 14px;
+   margin-right:0;
+    width: auto;
+}
+div{
+    height: 100%;
+    position: relative;
+    float: left;
+}
+/*<--scene01-->*/
+#scene01{
+    background-image: url(../images/scene01/bg_01.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+}
+#scene01 .position_list{
+    display: block;
+}
+#scene01 .position_list li{
+    width:auto;
+    position: absolute;
+    display: inline-block;
+}
+#scene01 .position_list .maintypo{
+    left: 680px;
+    bottom: 510px;
+}
+#scene01 .position_list .musicbox{
+    left: 603px;
+    bottom: 78.5px;
+}
+.left_building{
+    left: 44px;
+    bottom: 100px
+}
+.right_building{
+    left: 1366px;
+    bottom: 120px;
+}
+#scene01 .light{
+    left: 640px;
+    top: 0px;
+}
+/*<--scene02-->*/
+#scene02{
+    background-image: url(../images/scene02/bg_02.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+}
+#scene02 .position_list{
+    display: block;
+}
+#scene02 .position_list li{
+    width:auto;
+    position: absolute;
+    display: inline-block;
+}
+#topmenu .inner_topmenu > li > a{
+    display: block;
+    width: 79px;
+    height: 79px;
+    top: 300px;
+    text-indent: -999px;
+}
+#scene02 .cloud_02{
+    left: 75px;
+    top: 200px;
+}
+.topmenu_01{
+    left: 1235px;
+    top: 59px;
+}
+#topmenu .topmenu_01 a{
+    background: url(../images/scene02/topmenu_01.png) no-repeat left top;
+}
+#topmenu .topmenu_01 a:hover{
+    background: url(../images/scene02/topmenu_over_01.png) no-repeat left top;
+    left: 1235px;
+    bottom: 90px;
+}
+.topmenu_02{
+    left: 1279px;
+    top: 59px;
+}
+#topmenu .topmenu_02 a{
+    background: url(../images/scene02/topmenu_02.png) no-repeat left top;
+    left: 1235px;
+    top: 59px;
+}
+
+#topmenu .topmenu_02 a:hover{
+    background: url(../images/scene02/topmenu_over_02.png) no-repeat left top;
+}
+.topmenu_03{
+    left: 1325px;
+    top: 59px;
+}
+#topmenu .topmenu_03 a{
+    background: url(../images/scene02/topmenu_03.png) no-repeat left top;
+    left: 1235px;
+    top: 59px;
+}
+#topmenu .topmenu_03 a:hover{
+    background: url(../images/scene02/topmenu_over_03.png) no-repeat left top;
+}
+#scene02 .top_01{
+    left: 860px;
+    top: -4px;
+}
+#scene02 .left_building{
+    left: 39px;
+    bottom: 64px;
+}
+#scene02 .right_building{
+    left: 1362px;
+    bottom: -4px;
+    z-index: 999;
+}
+#scene02 .book{
+    left: 408px;
+    top: 154px;
+}
+#scene02 .banner{
+    left: 1020px;
+    top: 157px;
+}
+#scene02 .banner_click{
+    left: 1020px;
+    top: 157px;
+    z-index: 999;
+}
+#scene02 .tree_03{
+    left: -75px;
+    bottom: 57px;
+}
+
+/*<--scene03-->*/
+#scene03{
+    background-image: url(../images/scene03/bg_03.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+}
+#scene03 .position_list{
+    display: block;
+}
+#scene03 .position_list li{
+    width:auto;
+    position: absolute;
+    display: inline-block;
+}
+
+#scene03 .top_02{
+    left: 860px;
+    top: -4px;
+}
+#scene03 .tapmenu_01{
+    left: 1388px;
+    top: 181px;
+		width:48px;
+		height: 216px;
+}
+#scene03 .tapmenu_01 button{
+	position: relative;
+	width:48px;
+	height: 120px;
+	border: none;
+}
+#scene03 .tapmenu_01 button#tap_btn1{
+	background: url(../images/scene03/tapmenu_1_act.png);
+	z-index: 999;
+}
+
+#scene03 .tapmenu_01 button#tap_btn2{
+	background: url(../images/scene03/tapmenu_2_noact.png);
+	top:95px;
+	left:-48px;
+	z-index: 950;
+}
+#scene03 .book_02{
+    left: 410px;
+    top: 158px;
+}
+#scene03 .button{
+    left: 660px;
+    bottom: 296px;
+		opacity: 0;
+}
+#scene03 .left_building{
+    left: 110px;
+    bottom: 148px;
+}
+#scene03 .right_building{
+    left: 1480px;
+    bottom: 110px;
+    z-index: 999;
+}
+#scene03 .cloud_03{
+    left: 75px;
+    top: 200px;
+}
+
+/*<--scene04-->*/
+#scene04{
+    background-image: url(../images/scene04/bg_04.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+}
+#scene04 .position_list{
+    display: block;
+}
+#scene04 .position_list li{
+    width:auto;
+    position: absolute;
+    display: inline-block;
+}
+#scene04 .topmenu_01{
+    left: 1235px;
+    top: 59px;
+}
+
+#scene04 .top_03{
+    left: 860px;
+    top: -4px;
+}
+#scene04 .book{
+    width:1113px;
+	height:724px;
+    left: 405px;
+    top: 140px;
+    z-index: 50;
+    background: url(../images/scene04/book.png);
+}
+#scene04 .book .book_detail{
+    margin-left: 200px;
+    margin-top:150px;
+    z-index: 51;
+}
+#scene04 .book .book_detail > div{
+
+	width:708px;
+	height:339px;
+	position:absolute;
+
+}
+#scene04 .slidesjs-pagination{
+	position:absolute;
+	left:50%;
+	bottom:0;
+	width:200px;
+	height:20px;
+	z-index:99;
+	margin-left:-100px;
+	font-size:0;
+	text-align:center;
+}
+
+#scene04 .slidesjs-pagination li{
+	display:none;
+	margin:0 3px;
+}
+
+#scene04 .slidesjs-pagination li a{
+	display:none;
+
+}
+
+#scene04 .slidesjs-previous{
+	position:absolute;
+	left:0;
+	top:140px;
+	z-index:120;
+	background:url(../images/scene04/arrow_01.png);
+	height:67px;
+	width:48px;
+	text-indent:-9999px;
+
+}
+
+#scene04 .slidesjs-next{
+	position:absolute;
+	right:0;
+	top:140px;
+	z-index:130;
+	background:url(../images/scene04/arrow_02.png);
+	height:67px;
+	width:48px;
+	text-indent:-9999px;
+}
+
+#scene04 .left_building{
+    left: 85px;
+    bottom: 123px;
+}
+#scene04 .right_building{
+    left: 1412px;
+    bottom: 126px;
+}
+#scene04 .cloud_04{
+    left: 75px;
+    top: 200px;
+}
+#scene04 .illust_inner{
+    left: 570px;
+    bottom: 130px;
+    z-index: 999;
+}
