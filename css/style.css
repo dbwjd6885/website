@@ -123,18 +123,18 @@ div{
 }
 #scene01 .position_list .maintypo{
     left: 680px;
-    bottom: 510px;
+    bottom: 555px;
 }
 #scene01 .position_list .musicbox{
     left: 603px;
-    bottom: 78.5px;
+    bottom: 95px;
 }
 .left_building{
     left: 44px;
     bottom: 100px
 }
 .right_building{
-    left: 1366px;
+    left: 1353px;
     bottom: 120px;
 }
 #scene01 .light{
@@ -219,7 +219,7 @@ div{
 }
 #scene02 .book{
     left: 408px;
-    top: 154px;
+    top: 180px;
 }
 #scene02 .banner{
     left: 1020px;
@@ -257,7 +257,7 @@ div{
 }
 #scene03 .tapmenu_01{
     left: 1388px;
-    top: 181px;
+    top: 230px;
 		width:48px;
 		height: 216px;
 }
@@ -280,11 +280,11 @@ div{
 }
 #scene03 .book_02{
     left: 410px;
-    top: 158px;
+    top: 183px;
 }
 #scene03 .button{
     left: 660px;
-    bottom: 296px;
+    bottom: 329px;
 		opacity: 0;
 }
 #scene03 .left_building{
@@ -329,7 +329,7 @@ div{
     width:1113px;
 	height:724px;
     left: 405px;
-    top: 140px;
+    top: 170px;
     z-index: 50;
     background: url(../images/scene04/book.png);
 }
@@ -403,7 +403,7 @@ div{
     top: 200px;
 }
 #scene04 .illust_inner{
-    left: 570px;
-    bottom: 130px;
+    left: 586px;
+    bottom: 160px;
     z-index: 999;
 }
