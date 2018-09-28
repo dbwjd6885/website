@@ -223,11 +223,11 @@ div{
 }
 #scene02 .banner{
     left: 1020px;
-    top: 157px;
+    top: 183px;
 }
 #scene02 .banner_click{
     left: 1020px;
-    top: 157px;
+    top: 183px;
     z-index: 999;
 }
 #scene02 .tree_03{
