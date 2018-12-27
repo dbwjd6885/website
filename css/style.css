@@ -12,25 +12,26 @@ ul{
 	list-style-type:none;
 }
 #footer{
-    position:absolute;
+    position:fixed;
     left: 0;
-	bottom:0;
-	width:100%;
+    bottom:0;
+    width:100%;
     height: 46px;
 
-    background-image:url(../images/common/footer.png );
+    background-image:url(../images/common/footer.png);
     background-repeat: repeat-x;
     background-position: left bottom;
     background-size: cover;
 	z-index:998;
 }
 
+
 /*----gnb---*/
 
 #gnb{
    position:fixed;
    left:0;
-   bottom:46px;
+   bottom:46px;//해상도조절시 변경
    width:100%;
    height:37px;
     background-image: url(../images/common/gnb_back.png);
@@ -39,7 +40,7 @@ ul{
     z-index: 999;
 }
 #gnb .inner_gnb{
-    margin-left: 560px;
+    margin-left: 625px;
     margin-top: -45px;
 }
 #gnb .inner_gnb >li{
@@ -90,28 +91,43 @@ ul{
 }
 #gnb .inner_gnb > li.rudolph{
     z-index: 9999;
-    margin-left:-759px;
-    top:-15px;
+		position:absolute;
+		bottom: 15px;
+		 left:511px;
+		 margin-right:0;
 }
 
 #gnb .inner_gnb > .rudolph .rudolph_image{
-   position:absolute;
-    margin-left: -250px;
-    bottom: 14px;
-   margin-right:0;
     width: auto;
 }
-div{
-    height: 100%;
-    position: relative;
-    float: left;
+
+
+.hidden_box{
+	height:100%;
+	overflow:auto;
 }
+
+.wrap{
+	height:100%;
+	width:7680px;
+	overflow:hidden;
+	position:relative;
+	bottom:0px;
+}
+
+.wrap > div{
+	width:1920px;
+	height:100%;
+	position:relative;
+	float:left;
+}
+
 /*<--scene01-->*/
 #scene01{
     background-image: url(../images/scene01/bg_01.png);
     background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: cover;
+    background-position: left top;
+/*    background-size: cover;*/
 }
 #scene01 .position_list{
     display: block;
@@ -122,31 +138,98 @@ div{
     display: inline-block;
 }
 #scene01 .position_list .maintypo{
-    left: 680px;
-    bottom: 555px;
+    left: 710px;
+    top: 163px;
+    z-index: 9999;
+}
+#scene01 .position_list .bell{
+    left: 1175px;
+    top: 408px;
 }
 #scene01 .position_list .musicbox{
-    left: 603px;
-    bottom: 95px;
+    left: 629px;
+    bottom: 83px;
 }
+#scene01 .position_list .orgel{
+    position: absolute;
+    display: inline-block;
+    left: 628px;
+    top: 470px;
+    z-index: 1;
+}
+#scene01 .position_list .orgel #orgle_musicbox p{
+    position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+
+#scene01 .position_list .orgel_snow{
+    position: absolute;
+    display: inline-block;
+    left: 668px;
+    top: 493px;
+    z-index: 999;
+}
+#scene01 .position_list .orgel_snow #orgle_snow p{
+    position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+
+#scene01 .position_list .orgel_wheel{
+    position: absolute;
+    display: inline-block;
+    left: 674px;
+    top: 484px;
+}
+#scene01 .position_list .orgel_wheel #orgle_back p{
+    position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+#scene01 .position_list .orgel_shine{
+    position: absolute;
+    display: inline-block;
+    left: 638px;
+    top: 480px;
+}
+
 .left_building{
-    left: 44px;
-    bottom: 100px
+    left: 54px;
+    top: 687px
 }
 .right_building{
-    left: 1353px;
-    bottom: 120px;
+    left: 1367px;
+    top: 665px;
 }
+/*
 #scene01 .light{
-    left: 640px;
+    left: 670px;
     top: 0px;
 }
+*/
+#scene01 .position_list .light{
+    left: 660px;
+    top: -6px;
+}
+#scene01 .position_list .light p{
+    position:absolute;
+    left: 0;
+    top: 0;
+	display:none;
+    
+}
+
+
 /*<--scene02-->*/
 #scene02{
     background-image: url(../images/scene02/bg_02.png);
     background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: cover;
+    background-position: left top;
+/*    background-size: cover;*/
 }
 #scene02 .position_list{
     display: block;
@@ -158,18 +241,23 @@ div{
 }
 #topmenu .inner_topmenu > li > a{
     display: block;
-    width: 79px;
-    height: 79px;
+    width: 78px;
+    height: 74px;
     top: 300px;
     text-indent: -999px;
 }
-#scene02 .cloud_02{
-    left: 75px;
-    top: 200px;
+#scene02 .cloud_01{
+    left: 300px;
+    top: 220px;
 }
+#scene02 .cloud_02{
+    left: 1600px;
+    top: 300px;
+}
+
 .topmenu_01{
     left: 1235px;
-    top: 59px;
+    top: 40px;
 }
 #topmenu .topmenu_01 a{
     background: url(../images/scene02/topmenu_01.png) no-repeat left top;
@@ -177,16 +265,16 @@ div{
 #topmenu .topmenu_01 a:hover{
     background: url(../images/scene02/topmenu_over_01.png) no-repeat left top;
     left: 1235px;
-    bottom: 90px;
+    top: 40px;
 }
 .topmenu_02{
     left: 1279px;
-    top: 59px;
+    top: 40px;
 }
 #topmenu .topmenu_02 a{
     background: url(../images/scene02/topmenu_02.png) no-repeat left top;
     left: 1235px;
-    top: 59px;
+    top: 40px;
 }
 
 #topmenu .topmenu_02 a:hover{
@@ -194,53 +282,120 @@ div{
 }
 .topmenu_03{
     left: 1325px;
-    top: 59px;
+    top: 40px;
 }
 #topmenu .topmenu_03 a{
     background: url(../images/scene02/topmenu_03.png) no-repeat left top;
     left: 1235px;
-    top: 59px;
+    top: 40px;
 }
 #topmenu .topmenu_03 a:hover{
     background: url(../images/scene02/topmenu_over_03.png) no-repeat left top;
 }
 #scene02 .top_01{
     left: 860px;
-    top: -4px;
 }
 #scene02 .left_building{
-    left: 39px;
-    bottom: 64px;
-}
-#scene02 .right_building{
-    left: 1362px;
-    bottom: -4px;
+    left: 189px;
+    top: 610px;
     z-index: 999;
+}
+
+#scene02 .right_building{
+    left: 1384px;
+    top: 581px;
+    z-index: 900;
 }
 #scene02 .book{
-    left: 408px;
-    top: 180px;
+    left: 398.5px;
+    top: 190px;
+    z-index: 997;
 }
+#scene02 .banner_fix{
+    left: 1160px;
+    top: 202px;
+    z-index: 997
+}
+#scene02 .banner_cloud{
+    left: 1000px;
+    top: 247px;
+    z-index: 998;
+}
+/*
 #scene02 .banner{
-    left: 1020px;
-    top: 183px;
+    left: 1024px;
+    top: 236px;
 }
-#scene02 .banner_click{
-    left: 1020px;
-    top: 183px;
+*/
+#scene02 #banner_all{
+    position: relative;
+    left: 1060px;
+    top: 233px;
+    z-index: 998;
+}
+#scene02 ul #banner_all .banner {
+    display: inline-block;
+    position: absolute;
+    left: -38px;
+    top: 61px;
+    z-index: 998;
+}
+#scene02 ul #banner_hand a p{
+    position:absolute;
+	left:0;
+	top:0;
+	display:none;
+}
+#scene02 .rudolph_motion{
+    position: relative;
+    left: 1060px;
+    top: 233px;
     z-index: 999;
 }
+#scene02 ul .rudolph_motion .rudolph_head {
+    position: absolute;
+    left: -434px;
+    top:78px;
+    z-index: 1;
+}
+#scene02 .rudolph_motion .rudolph_head p{
+    position:absolute;
+		left:0;
+		top:0;
+		display:none;
+}
+#scene02 .orgel_click_typo{
+    left: 1060px;
+    top: 681px;
+    z-index: 999;
+}
+#scene02 #orgel_click_1{
+    left:751px;
+    top: 747px;
+    z-index: 998;
+}
+#scene02 #orgel_click_2{
+    left: 1010px;
+    top: 737px;
+    z-index: 998;
+}
+#scene02 #orgel_click_3{
+    left: 1294px;
+    top: 759px;
+    z-index: 998;
+}
+
 #scene02 .tree_03{
-    left: -75px;
-    bottom: 57px;
+    left: -80px;
+    top: 720px;
 }
 
 /*<--scene03-->*/
 #scene03{
     background-image: url(../images/scene03/bg_03.png);
     background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: cover;
+    background-position: left top;
+/*    background-size: cover;*/
 }
 #scene03 .position_list{
     display: block;
@@ -250,16 +405,105 @@ div{
     position: absolute;
     display: inline-block;
 }
-
 #scene03 .top_02{
     left: 860px;
-    top: -4px;
+}
+#scene03 .cloud_03{
+    left: 330px;
+    top: 165px;
+    z-index: 0;
+}
+#scene03 .book .book_02{
+    left: 410px;
+    top: 190px;
+    z-index: 1;
+}
+
+#scene03 .book .rudolph_big{
+    left: 930px;
+    top: 629px;
+    z-index: 998;
+}
+#scene03 #rudolph_big p{
+    position:absolute;
+    left: 0px;
+    top: 0px;
+	display:none;
+}
+#scene03 .book .rudolph_small{
+    left: 1090px;
+    top: 697px;
+    z-index: 999;
+}
+#scene03 #rudolph_small p{
+    position:absolute;
+    left: 0px;
+    top: 0px;
+	display:none;
+}
+#scene03 .box_all .rudolph_small_1{
+    left: 928px;
+    top: 687px;
+    z-index: 999;
+}
+#scene03 #rudolph_small_1 p{
+    position:absolute;
+    left: 0;
+    top: 0;
+/*	display:none;*/
+}
+#scene03 .book #insta_typo{
+    left: 1052px;
+    top: 628px;
+}
+#scene03 .book .box_all #box_cosmetic{
+    left: 980px;
+    top: 463px;
+    z-index: 995;
+}
+#scene03 .book .box_all #box_star{
+    left: 980px;
+    top: 257px;
+    z-index: 994;
+}
+#scene03 .book .box_all #box_star_2{
+    left: 980px;
+    top: 278px;
+    z-index: 996;
+/*    opacity: 0;*/
+}
+#scene03 .book .box_all #box{
+    left: 980px;
+    top: 507px;
+    z-index: 996;
+}
+#scene03 .book .box_all #popup_illust{
+    left: 1253px;
+    top: 702px;
+    z-index: 997;
+}
+
+#scene03 .button{
+    left: 670px;
+    top: 644px;
+    opacity: 0;
+    z-index: 1;
+}
+#scene03 .button_arrow_1{
+    left: 842px;
+    top: 658px;
+    z-index: 930;
+}
+#scene03 .button_arrow_2{
+    left: 840px;
+    top: 658px;
+    z-index: 930;
 }
 #scene03 .tapmenu_01{
     left: 1388px;
-    top: 230px;
-		width:48px;
-		height: 216px;
+    top: 238px;
+    width:48px;
+    height: 216px;
 }
 #scene03 .tapmenu_01 button{
 	position: relative;
@@ -278,68 +522,51 @@ div{
 	left:-48px;
 	z-index: 950;
 }
-#scene03 .book_02{
-    left: 410px;
-    top: 183px;
-}
-#scene03 .button{
-    left: 660px;
-    bottom: 329px;
-		opacity: 0;
-}
+
 #scene03 .left_building{
-    left: 110px;
-    bottom: 148px;
+    left: 124px;
+    top: 630px;
 }
 #scene03 .right_building{
-    left: 1480px;
-    bottom: 110px;
+    left: 1440px;
+    top: 620px;
     z-index: 999;
-}
-#scene03 .cloud_03{
-    left: 75px;
-    top: 200px;
 }
 
 /*<--scene04-->*/
 #scene04{
     background-image: url(../images/scene04/bg_04.png);
     background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: cover;
+    background-position: left top;
+/*    background-size: cover;*/
 }
 #scene04 .position_list{
     display: block;
+
 }
 #scene04 .position_list li{
     width:auto;
     position: absolute;
     display: inline-block;
 }
-#scene04 .topmenu_01{
-    left: 1235px;
-    top: 59px;
-}
 
 #scene04 .top_03{
     left: 860px;
-    top: -4px;
 }
 #scene04 .book{
-    width:1113px;
-	height:724px;
+	position:absolute;
+    width:1104px;
+	height:718px;
     left: 405px;
-    top: 170px;
-    z-index: 50;
+    top: 190px;
     background: url(../images/scene04/book.png);
 }
 #scene04 .book .book_detail{
+	width:708px;
     margin-left: 200px;
-    margin-top:150px;
-    z-index: 51;
+    margin-top:165px;
 }
 #scene04 .book .book_detail > div{
-
 	width:708px;
 	height:339px;
 	position:absolute;
@@ -369,41 +596,58 @@ div{
 
 #scene04 .slidesjs-previous{
 	position:absolute;
-	left:0;
-	top:140px;
+	top:280px;
 	z-index:120;
 	background:url(../images/scene04/arrow_01.png);
 	height:67px;
 	width:48px;
 	text-indent:-9999px;
-
+    right:895px
 }
 
 #scene04 .slidesjs-next{
 	position:absolute;
-	right:0;
-	top:140px;
+	top:280px;
 	z-index:130;
 	background:url(../images/scene04/arrow_02.png);
 	height:67px;
 	width:48px;
 	text-indent:-9999px;
+    left:895px;
 }
 
 #scene04 .left_building{
     left: 85px;
-    bottom: 123px;
+    top: 630px;
+    z-index: 1;
 }
 #scene04 .right_building{
-    left: 1412px;
-    bottom: 126px;
+    left: 1416px;
+    top: 635px;
+    z-index: 1;
 }
+/*구름 움직임*/
 #scene04 .cloud_04{
-    left: 75px;
-    top: 200px;
+    left: 300px;
+    top: 220px;
+}
+#scene04 .cloud_05{
+    left: 1500px;
+    top: 270px;
 }
 #scene04 .illust_inner{
-    left: 586px;
-    bottom: 160px;
+    left: 557px;
+    top: 634px;
     z-index: 999;
+}
+#scene04 .position_list .girl{
+    left: 630px;
+    top: 630px;
+    z-index: 999;
+}
+#scene04 .position_list .girl p{
+    position:absolute;
+    left: 0;
+    top: 0;
+	display:none;
 }
