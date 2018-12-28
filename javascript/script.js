@@ -7,9 +7,7 @@ var rudolph_play_animation=0;
 var santa_play_animation=0;
 var tree_play_animation=0;
 var switch_scroll_event = true;
-//var rudolph_head_flag = false;
-//var santa_head_flag = false;
-//var tree_head_flag = false;
+
 $(document).ready(function() {
   nice = $('.hidden_box').nicescroll({
     cursorcolor: "#777",
@@ -24,24 +22,16 @@ $(document).ready(function() {
     boxzoom: true,
     zindex: -99999
   });
-
-
 });
 console.log(nice);
-//<-------------------end--------------------->
 
 //<------------전체 function 시작--------------->
-$(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery와 html이 로드 됬을때 초기설정을 뜻해
+$(function() { 
   $('.box_all').find('img').hide();
-  //        $('#box_cosmetic').find('img').hide();
-  //        $('#box_star').find('img').hide();
-  //        $('#popup_illust').find('img').hide();
   $("#scene02 .top_01").css("marginTop",-200); //위치초기화
-  $("#scene03 .top_02").css("marginTop",-200); //위치초기화
-  $("#scene04 .top_03").css("marginTop",-200); //위치초기화
+  $("#scene03 .top_02").css("marginTop",-200); 
+  $("#scene04 .top_03").css("marginTop",-200); 
 
-
-  // 초기설정 부분에서 유정이가 원하는 이미지에 대해서 hide! 숨긴다.
   //<--scene01에서 bell-->
   TweenMax.set("#scene01 .bell", {
     rotation: -8
@@ -89,19 +79,7 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
     }).timeScale(1.5).delay(0.5);
 
 
-//    scene02 구름 모션
-//        TweenMax.to(this,HEROPY.random(3, 4), {
-//                delay: 0.8 * p,
-//                x: 20,
-//                yoyo: true,
-//                repeat: -1,
-//                ease: Power1.easeInOut
-//            });
-
-
-
   //<----------------이미지 애니메이션들---------------->
-  //<--scene02에서 이민호 hand_shaking-->
   function aniImg(aniName) {
     var downup = 0;
 
@@ -250,105 +228,6 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
 
   }
 
-//      function aniImg06(aniName,flag) {
-//    var downup = 0;
-//
-//    function animation() {
-//      if (j == 0 && downup == 1) {
-//        downup = 0;
-//
-//      } else if (j == t && downup == 0) {
-//        downup = 1;
-//      }
-//
-//      if (downup == 0)
-//        j++;
-//      else
-//        j--;
-//
-//      $(aniName).find('p').hide().eq(j).show();
-//      if(flag){
-//        rudolph_play_animation=setTimeout(animation, speed);
-//      }
-//      else {
-//        clearTimeout(rudolph_play_animation);
-//      }
-//    };
-//
-//    var total = $(aniName).find('p').length - 1;
-//
-//    var j = 0;
-//    var t = total;
-//    var speed = 150;
-//    animation();
-//
-//  }
-//
-//  function aniImg07(aniName,flag) {
-//    var downup = 0;
-//
-//    function animation() {
-//      if (j == 0 && downup == 1) {
-//        downup = 0;
-//
-//      } else if (j == t && downup == 0) {
-//        downup = 1;
-//      }
-//
-//      if (downup == 0)
-//        j++;
-//      else
-//        j--;
-//
-//      $(aniName).find('p').hide().eq(j).show();
-//      if(flag)
-//        santa_play_animation=setTimeout(animation, speed);
-//      else {
-//          clearTimeout(santa_play_animation);
-//      }
-//    };
-//
-//    var total = $(aniName).find('p').length - 1;
-//
-//    var j = 0;
-//    var t = total;
-//    var speed = 150;
-//    animation();
-//
-//  }
-//
-//  function aniImg08(aniName,flag) {
-//    var downup = 0;
-//
-//    function animation() {
-//      if (j == 0 && downup == 1) {
-//        downup = 0;
-//
-//      } else if (j == t && downup == 0) {
-//        downup = 1;
-//      }
-//
-//      if (downup == 0)
-//        j++;
-//      else
-//        j--;
-//
-//      $(aniName).find('p').hide().eq(j).show();
-//      if(flag)
-//        tree_play_animation=setTimeout(animation, speed);
-//      else {
-//          clearTimeout(tree_play_animation);
-//      }
-//    };
-//
-//    var total = $(aniName).find('p').length - 1;
-//
-//    var j = 0;
-//    var t = total;
-//    var speed = 150;
-//    animation();
-//
-//  }
    function aniImg09(aniName){
 
       var downup=0;
@@ -450,9 +329,6 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
     aniImg11('#orgel_snow');
     aniImg12('#light');
 
-
-
-  //<----------------빛 반짝임---------------->
   //<--scene03에서 box_star 반짝임-->
   function twinkle() {
     var speed = [1000, 1000];
@@ -491,7 +367,6 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
       document.getElementById('tap_btn2').style.zIndex = 950;
       document.getElementById('bookpage').src = "images/scene03/book_01.png";
       document.getElementById('link_btn').style.opacity = "0";
-      //      $('#box_cosmetic').find('img').toggle();
       $('.box_all').find('img').toggle();
       $('#insta_typo').find('img').show();
       $('#rudolph_big').find('img').show();
@@ -513,10 +388,7 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
       $('#insta_typo').find('img').hide();
       $('#rudolph_big').find('img').hide();
       $('#rudolph_small').find('img').hide();
-      //      $('#box_cosmetic').find('img').toggle();               // 3번씬에서 버튼을 눌렀을때 이미지를 show -> hide상태로 바꾼다.(뒤집는다)
       tapflag = true;
-      // 이벤트2 tap 클릭시: 애니메이션 시작
-      //  <--scene03에서 book_cosmetic_2--> 클릭시 시작되도록 클릭위치로 옮긴다.
            TweenMax.set("#scene03 #box_cosmetic", {
            y:0,
            visibility: false,
@@ -531,14 +403,13 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
     }
   });
 
-////오르골 hover시: 오브젝트 움직임
+//오르골 hover시: 오브젝트 움직임
   $('#scene02 .orgel_click a').mouseenter(function() {
     $(this).find('img').attr("src", "images/scene02/orgel_click_hover.png");
 
   }).mouseleave(function() {
     $(this).find('img').attr("src", "images/scene02/orgel_click.png");
   });
-
 
 //scene02 구름 모션
   baloonUp01()
@@ -613,7 +484,6 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
     }, 2800, null, baloonUp05);
   }
 
-
   var s1 = $('#scene01').width();
   var s2 = $('#scene02').width();
   var s3 = $('#scene03').width();
@@ -622,6 +492,7 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
   var p1 = $('#scene01').position().left;
   var p2 = $('#scene02').position().left;
   var p3 = $('#scene03').position().left;
+  var p3 = $('#scene04').position().left;
 
   //<----------------Top 메뉴---------------->
   $('#gnb .inner_gnb .gnb01 > a').bind('click', function(e) {
@@ -637,7 +508,6 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
       switch_scroll_event = true;
     });
 
-
     $("#scene02 .top_01").animate({
       marginTop: '-200px'
     }, 600, 'easeInOutCubic');
@@ -647,7 +517,6 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
     $("#scene04 .top_03").animate({
       marginTop: '-200px'
     }, 600, 'easeInOutCubic');
-
   });
 
   //<------------다음 네비게이션 이동->Top 메뉴 조정------------->
@@ -744,7 +613,6 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
       $(".rudolph_image").attr('src', 'images/common/gnb_4.png');
     }
 
-
      //스크롤하면 상단 TOP 내려오도록//
     if (scrollLeft>1920-scm_c && scrollLeft<1920){
       if(switch_scroll_event){
@@ -754,9 +622,7 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
         if(point>0) point= 0;
         if(point<-200) point = -200;
         $("#scene02 .top_01").css("marginTop",point);
-
       }
-
     }
     if (scrollLeft>1920*2-scm_c && scrollLeft<1920*2){
       if(switch_scroll_event){
@@ -766,7 +632,6 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
         if(point2<-200) point2 = -200;
         $("#scene03 .top_02").css("marginTop",point2);
       }
-
     }
     if (scrollLeft>1920*3-scm_c && scrollLeft<1920*3){
       if(switch_scroll_event){
@@ -776,14 +641,10 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
         if(point3<-200) point3 = -200;
         $("#scene04 .top_03").css("marginTop",point3);
       }
-
-
     }
     postscrollLeft = scrollLeft;
   });
 
-//slide -> 기존방식
-//fade -> opacity 연해졌다 진해졌다 하는 방식
   //<----scene04 slide.js---->
   $('.book_detail').slidesjs({
     play: {
@@ -798,7 +659,7 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
       active: true, // 버튼 활성화/비활성화
       effect: "fade"
     },
-    pagination: { // 페이지네이션, 현재 선택된 슬라이드표시, 전체 갯수 표시
+    pagination: { // 페이지네이션, 현재 선택된 슬라이드표시, 전체 개수 표시
       active: true,
       effect: "fade"
     },
@@ -811,5 +672,4 @@ $(function() { //$(function(){}) 이 부분이 jquery에서 처음으로 jquery�
       }
     }
   });
-
 });
